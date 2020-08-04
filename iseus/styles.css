@@ -89,7 +89,7 @@ header a{
 
 header .logo{
     text-align: left;
-    margin-left: 70px;
+    margin-left: 80px;
     
 }
 
@@ -112,10 +112,41 @@ header .menu a{
     top: 40px;
 }
 header .menu{
-    margin-right: 70px;
+    margin-right: 80px;
 }
 header h1{
     color: white;
     margin-top: 350px;
+    font-size: 50px;
     
+}
+
+section .h1{
+    margin-left: 80px;
+    margin-top: -12px;
+    text-transform: uppercase;
+    font-size: 30px;
+    width: 15%;
+    float: left;
+   
+}
+section .hr{
+    margin-top: 0px;
+    margin-right: 80px;
+    width: 72%;
+    height: 3px;
+    background: black;
+    color: black;
+}
+section h2{
+    text-transform: uppercase;
+    margin-top: 70px;
+    margin-left: -210px;
+    float: left;
+}
+.sec1{
+    background: rgba(243, 243, 243, 0.5);
+    height: 300px;
+    margin-top: 0px;
+    padding-top: 80px;
 }
