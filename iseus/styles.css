@@ -178,3 +178,28 @@ section h2{
     height: 360px;
     margin-top: 60px;
 }
+.sec2{
+    background: white;
+    height: 500px;
+    margin-top: 0px;
+    padding-top: 80px;
+}
+.sec2 .hr{
+    width: 74%;
+}
+.paragraph2{
+    width: 89%;
+    float: left;
+    height: 300px;
+    margin-top: 80px;
+    margin-left: -225px;
+}
+.paragraph2 h1{
+    text-transform: uppercase;
+    font-size: 27px;
+}
+.paragraph2 p{
+    font-size: 14px;
+    color: gray;
+    line-height: 1.9
+}
