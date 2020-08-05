@@ -201,5 +201,43 @@ section h2{
 .paragraph2 p{
     font-size: 14px;
     color: gray;
-    line-height: 1.9
+    line-height: 1.9;
+}
+section .square{
+    border:1px solid #c2c2c2;
+    height: 380px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 250px;
+    
+    border-radius: 35px;
+    background-image: url("img/Mask Group 15.png");
+    background-repeat: no-repeat;
+    background-size: 40%;
+}
+.paragraph3{
+    width: 40%;
+    float: right;
+    margin-right: 90px;
+    margin-top: -75px;
+}
+.paragraph3 h1{
+    text-transform: uppercase;
+    font-size: 27px;
+}
+.title{
+    text-transform: uppercase;
+    color: #acacac;
+    font-size: 20px;
+}
+.paragraph3 h3{
+    line-height: 1.9;
+    color: #292929;
+    font-size: 18px;
+}
+.paragraph3 p{
+    font-size: 14px;
+    color: #828282;
+    line-height: 1.5;
+    font-size: 12px;
 }
