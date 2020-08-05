@@ -203,25 +203,32 @@ section h2{
     color: gray;
     line-height: 1.9;
 }
-section .square{
+.first-p{
+    margin-bottom: 250px;
+}
+section .square-left{
     border:1px solid #c2c2c2;
     height: 380px;
     margin-left: 100px;
     margin-right: 100px;
-    margin-top: 250px;
-    
+    margin-top: 30px;
     border-radius: 35px;
     background-image: url("img/Mask Group 15.png");
     background-repeat: no-repeat;
-    background-size: 40%;
+    background-size: 40% 102%;
 }
-.paragraph3{
+.paragraph-right.first{
+    
+    margin-top: -75px;
+}
+.paragraph-right{
     width: 40%;
     float: right;
     margin-right: 90px;
-    margin-top: -75px;
+    margin-top: 60px;
+    
 }
-.paragraph3 h1{
+.paragraph-right h1{
     text-transform: uppercase;
     font-size: 27px;
 }
@@ -230,14 +237,47 @@ section .square{
     color: #acacac;
     font-size: 20px;
 }
-.paragraph3 h3{
+.paragraph-right h3{
     line-height: 1.9;
     color: #292929;
     font-size: 18px;
 }
-.paragraph3 p{
+.paragraph-right p{
     font-size: 14px;
     color: #828282;
     line-height: 1.5;
     font-size: 12px;
+}
+section .square-right{
+    border:1px solid #c2c2c2;
+    height: 380px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 30px;
+    border-radius: 35px;
+    background-image: url("img/img.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 40% 105%;
+    
+}
+.paragraph-left{
+    width: 40%;
+    float: left;
+    margin-left: 90px;
+    margin-top: 75px;
+}
+.paragraph-left h3{
+    line-height: 1.9;
+    color: #292929;
+    font-size: 18px;
+}
+.paragraph-left p{
+    font-size: 14px;
+    color: #828282;
+    line-height: 1.5;
+    font-size: 12px;
+}
+#pic3{
+    background-image: url("img/Mask Group 17.png");
 }
