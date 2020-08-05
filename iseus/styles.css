@@ -180,7 +180,7 @@ section h2{
 }
 .sec2{
     background: white;
-    height: 500px;
+    height: 1525px;
     margin-top: 0px;
     padding-top: 80px;
 }
@@ -280,4 +280,16 @@ section .square-right{
 }
 #pic3{
     background-image: url("img/Mask Group 17.png");
+}
+.sec3{
+    background: rgba(243, 243, 243, 0.5);
+    height: 500px;
+    margin-top: 0px;
+    padding-top: 80px;
+}
+.sec3 .hr{
+    width: 81%;
+}
+.sec3 .h1{
+    width: 8%;
 }
