@@ -180,9 +180,9 @@ section h2{
 }
 .sec2{
     background: white;
-    height: 500px;
-    margin-top: 0px;
+    height: auto;
     padding-top: 80px;
+    padding-bottom: 80px;
 }
 .sec2 .hr{
     width: 74%;
@@ -280,4 +280,83 @@ section .square-right{
 }
 #pic3{
     background-image: url("img/Mask Group 17.png");
+}
+.sec3{
+    background: rgba(243, 243, 243, 0.5);
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.sec3 .hr{
+    width: 81%;
+}
+.sec3 .h1{
+    width: 8%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 30px;
+    padding: 10px;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .grid-container > div {
+    background-color: #efefef;
+    height: 214px;
+    font-size: 30px;
+    border-radius: 18px;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 40% 105%;
+  }
+  .grid-container > div p{
+      font-size: 11px;
+      color: #333333;
+  }
+  .grid-container > div h1{
+      color: #333333;
+      font-size: 20px;
+  }
+  .grid-container > div .date{
+    color: #333333;
+    font-size: 10px;
+}
+.news-content{
+    width: 40%;
+    float: left;
+    margin-top: 35px;
+    margin-left: 35px;
+}
+#news1{
+    background-image: url("img/Group 40.png");
+}
+#news2{
+    background-image: url("img/Group 44.png");
+}
+#news3{
+    background-image: url("img/Group 32.png");
+}
+#news4{
+    background-image: url("img/Group 48.png");
+}
+#news5{
+    background-image: url("img/Group 52@2x.png");
+}
+#news6{
+    background-image: url("img/Group 36.png");
+}
+.news-btn{
+    background-color: #8bc34a;
+    border-radius: 21px;
+    width: 154px;
+    height: 42px;
+    color: white;
+    font-size: 15px;
+    text-transform: lowercase;
+    border: none;
+    margin-left: 110px;
+    margin-top: 50px;
 }
