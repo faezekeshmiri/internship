@@ -3,9 +3,37 @@
 <head>
     <title> ISEUS</title>
     <link rel="stylesheet" href="product_style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-	<header >
+    <header class="mobile">
+        <div class="mobile-container"></div>
+            <div class="topnav">
+              <a href="#" class="active">Logo</a>
+              <div id="myLinks">
+                <a href="#">Home</a>
+                <a href="#">Products/Services</a>
+                <a href="#">careers</a>
+                <a href="#">About us</a>
+                <a href="#">Contact</a>
+              </div>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
+            
+            <section class="paragraph mobile">
+              <h1>Products and Services</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                   Veritatis voluptate reprehenderit nisi?
+                   Aut quod maxime nemo dicta veniam! 
+                   Nam tempore repellendus fuga id beatae
+                   minima quas non atque dignissimos voluptatum!</p>
+            </section>
+            </div>
+    </header>
+	<header class="desktop">
         <select name="language" class="language">
             <option value="volvo">English</option>
             <option value="saab">persian</option>
@@ -29,6 +57,7 @@
                 <li><a href="#">Contact</a></li>
 			</ul>
         </nav>
+        
          
     </header>
     <section class="sec1">
@@ -40,7 +69,16 @@
                 Cupiditate saepe modi corporis esse deleniti amet eveniet.</p>
         </div>
     </section>
-    
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
     
 </body>
 </html>

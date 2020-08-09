@@ -92,7 +92,7 @@ header .logo{
     
 }
 header .imgLogo a{
-    background-color: none;
+      background-color: none;
       background-image: url("img/logo-grey.png");
       background-repeat: no-repeat;
       background-size: 50px;
@@ -101,10 +101,95 @@ header .imgLogo a{
       width: 300px;
       position: relative;
       top: -50px;
-      text-indent: -9999999px;  
-      
-    
+      text-indent: -9999999px;      
 }
+/*******************/
+.mobile{
+    display: none;
+    height: auto;
+    background-image: linear-gradient(132deg, #3db449, #9be643 99%);
+}
+.mobile .mobile-container {
+    max-width: 780px;
+    margin: auto;
+    color: white;
+  }
+  
+ .mobile .topnav {
+    overflow: hidden;
+    position: relative;
+  }
+  
+ .mobile .topnav #myLinks {
+    display: none;
+  }
+  
+ .mobile .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    margin-bottom: 30px;
+  }
+  
+ .mobile .topnav a.icon {
+    
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+ .mobile .topnav a:hover {
+    background-color: #3db449;
+    text-shadow: white;
+  }
+  
+ .mobile .topnav .active {
+        background-color: none;
+        background-image: url("img/logo.png");
+        background-repeat: no-repeat;
+        background-size: 50px;
+        margin-left: 20px;
+        height: 70px;
+        width: 100px;
+        position: relative;
+        top: -5px;
+        text-indent: -9999999px; 
+  }
+  .mobile .paragraph.mobile{
+      height: auto;
+      padding: 50px;
+  }
+ .mobile .paragraph.mobile h1{
+      margin-top: 10%;
+      margin-bottom: 5%;
+      text-transform: uppercase;
+      color: white;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: 4px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 35px;
+      text-align: center;
+  }
+ .mobile .paragraph.mobile p{
+      margin-bottom: 50px;
+      color: white;
+      line-height: 1.6;
+      letter-spacing: 1.41px;
+      opacity: 0.7;
+      font-size: 13px;
+      text-align: center;
+  }
+  
+  
+  /**********************/
+
+
 header .menu a{
     position: relative;
     top: 40px;
@@ -112,6 +197,7 @@ header .menu a{
 header .menu{
     margin-right: 80px;
 }
+
 header hr{
     color: #000000;
     background: #292929;
@@ -176,11 +262,15 @@ header hr{
     }
 }
 @media screen and (max-width: 600px){
-    .sec1 .left-p h1{
-        font-size: 20px;
+
+    .desktop{
+        display: none;
     }
-    .sec1 .left-p p{
-        font-size: 10px;
+    .sec1{
+        display: none;
+    }
+    .mobile{
+        display: block;
     }
 }
 
