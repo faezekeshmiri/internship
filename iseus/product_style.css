@@ -159,5 +159,29 @@ header hr{
     opacity: 0.7;
     font-size: 13px;
 }
+@media screen and (max-width: 800px){
+    .sec1 .left-p h1{
+        font-size: 30px;
+    }
+    .sec1 .left-p p{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 700px){
+    .sec1 .left-p h1{
+        font-size: 25px;
+    }
+    .sec1 .left-p p{
+        font-size: 11px;
+    }
+}
+@media screen and (max-width: 600px){
+    .sec1 .left-p h1{
+        font-size: 20px;
+    }
+    .sec1 .left-p p{
+        font-size: 10px;
+    }
+}
 
 
