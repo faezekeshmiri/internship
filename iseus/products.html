@@ -9,7 +9,7 @@
 <body>
     <header class="mobile">
         <div class="mobile-container"></div>
-            <div class="topnav">
+            <div class="topnav" id="topnav">
               <a href="#" class="active">Logo</a>
               <div id="myLinks">
                 <a href="#">Home</a>
@@ -72,9 +72,12 @@
     <script>
         function myFunction() {
           var x = document.getElementById("myLinks");
+          var y = document.getElementById("topnav");
           if (x.style.display === "block") {
+            y.style.background = "none";
             x.style.display = "none";
           } else {
+            y.style.background = "white";
             x.style.display = "block";
           }
         }

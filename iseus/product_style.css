@@ -112,20 +112,28 @@ header .imgLogo a{
 .mobile .mobile-container {
     max-width: 780px;
     margin: auto;
-    color: white;
+    color: black;
+   
   }
-  
+  .bg-none{
+      background: none;
+  }
+
  .mobile .topnav {
     overflow: hidden;
     position: relative;
   }
+  #topnav{
+      background: none;
+  }
   
  .mobile .topnav #myLinks {
+    background: white;
     display: none;
   }
   
  .mobile .topnav a {
-    color: white;
+    color: black;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
@@ -142,13 +150,12 @@ header .imgLogo a{
   }
   
  .mobile .topnav a:hover {
-    background-color: #3db449;
-    text-shadow: white;
+     text-decoration: underline;
   }
   
  .mobile .topnav .active {
         background-color: none;
-        background-image: url("img/logo.png");
+        background-image: url("img/logo-grey.png");
         background-repeat: no-repeat;
         background-size: 50px;
         margin-left: 20px;
