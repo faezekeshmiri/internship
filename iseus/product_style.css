@@ -260,7 +260,7 @@ header hr{
     flex-wrap: wrap;
 }
 .title-left{
-    width: 190px;
+    width: 203px;
     height: 68px;
     background: #47bd53;
     box-shadow: lightgray 0px 0px 8px;
@@ -278,14 +278,14 @@ header hr{
     letter-spacing: 2.6px;
 }
 .values-right{
-    width: 878px;
+    width: 911px;
     height: 238px;
     background: white;
     display: flex;
     flex-wrap: wrap;
 }
 .values-right div{
-    width: 290px;
+    width: 303px;
     background: white;
     height: 238px;
     border-right: 1px solid lightgray;
@@ -295,6 +295,25 @@ header hr{
     border: none;
     border-radius: 0px 10px 10px 0px;
     margin-bottom: 100px;
+}
+.values-right div .value-icon{
+  width: 48px;
+  height: 48px;
+  border-radius: 5px;
+  background-image: linear-gradient(to bottom, rgba(118, 253, 61, 0.5), rgba(0, 183, 18, 0.5));
+  margin: auto;
+  margin-top: 50px;
+}
+.values-right div .value-icon .icon{
+    width: 30px;
+    height: 30px;
+    margin: 9px;
+   
+}
+.values-right div h2{
+    color: #47bd53;
+    margin-top: 40px;
+    text-align: center;
 }
 
 /*************************************/
@@ -334,6 +353,10 @@ header hr{
     }
     .title-left{
         border-radius: 10px 10px 0px 0px;
+    }
+    .core-values{
+        margin-left: 9%;
+        margin-right: 9%;
     }
 }
 
