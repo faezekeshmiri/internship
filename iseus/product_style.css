@@ -108,6 +108,7 @@ header .imgLogo a{
     display: none;
     height: auto;
     background-image: linear-gradient(132deg, #3db449, #9be643 99%);
+    margin-bottom: 150px;
 }
 .mobile .mobile-container {
     max-width: 780px;
@@ -220,7 +221,6 @@ header hr{
     background-size:60% 102%;
     background-repeat: no-repeat;
     background-position: right;
-
 }
 .sec1 .left-p{
     background-image: linear-gradient(143deg, #3db449 1%, #9be643 59%);
@@ -252,6 +252,71 @@ header hr{
     opacity: 0.7;
     font-size: 13px;
 }
+.core-values{
+    background: white;
+    padding: 0% 9% 9% 9%;
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.title-left{
+    width: 203px;
+    height: 68px;
+    background: #47bd53;
+    box-shadow: lightgray 0px 0px 8px;
+    border-radius: 10px 0px 0px 10px;
+    color: white;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 85.5px;
+    padding-bottom: 85.5px;
+    line-height: 1.38;
+    letter-spacing: 2.6px;
+}
+.values-right{
+    width: 911px;
+    height: 238px;
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+.values-right div{
+    width: 303px;
+    background: white;
+    height: 238px;
+    border-right: 1px solid lightgray;
+    box-shadow: lightgray 0px 0px 5px;
+}
+.values-right div.no-border{
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    margin-bottom: 100px;
+}
+.values-right div .value-icon{
+  width: 48px;
+  height: 48px;
+  border-radius: 5px;
+  background-image: linear-gradient(to bottom, rgba(118, 253, 61, 0.5), rgba(0, 183, 18, 0.5));
+  margin: auto;
+  margin-top: 50px;
+}
+.values-right div .value-icon .icon{
+    width: 30px;
+    height: 30px;
+    margin: 9px;
+   
+}
+.values-right div h2{
+    color: #47bd53;
+    margin-top: 40px;
+    text-align: center;
+}
+
+/*************************************/
 @media screen and (max-width: 800px){
     .sec1 .left-p h1{
         font-size: 30px;
@@ -278,6 +343,20 @@ header hr{
     }
     .mobile{
         display: block;
+    }
+    .values-right div{
+        border-right:none;
+        border-bottom: 1px solid lightgray;
+    }
+    .values-right div.no-border{
+        border-radius: 0px 0px 10px 10px;
+    }
+    .title-left{
+        border-radius: 10px 10px 0px 0px;
+    }
+    .core-values{
+        margin-left: 9%;
+        margin-right: 9%;
     }
 }
 
