@@ -321,9 +321,10 @@ header hr{
     padding-bottom: 80px;
     height: auto;
     background: #fbfbfb;
+    padding-left: 9%;
+    padding-right: 9%;
 }
 .production .h1{
-    margin-left: 9% ;
     margin-right: 2%;
     margin-top: -12px;
     text-transform: uppercase;
@@ -332,10 +333,64 @@ header hr{
 }
 .production .hr{
     margin-top: 0px;
-    margin-right: 9%;
     height: 3px;
     background: black;
     color: black;
+}
+.production .para p{
+    float: left;
+    line-height: 1.21;
+    letter-spacing: 1.52px;
+    text-align: left;
+    color: #292929;
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+.production .pic{
+    border: 1px solid lightgray;
+    border-radius: 30px;
+    height: auto;
+    width: auto;
+    margin-top: 170px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 0px;
+}
+.production .left-img{
+    margin-bottom: -5px;
+    width: auto;
+}
+.img-size{
+    border-radius: 30px 0px 0px 30px;
+    width: 536px;
+    height: 430px;
+}
+.production .pic .paragraph-right{
+    width: 46%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.paragraph-right h1{
+    text-transform: uppercase;
+    font-size: 27px;
+}
+.title{
+    text-transform: uppercase;
+    color: #acacac;
+    font-size: 20px;
+}
+.paragraph-right h3{
+    line-height: 1.9;
+    color: #292929;
+    font-size: 18px;
+}
+.paragraph-right p{
+    font-size: 14px;
+    color: #828282;
+    line-height: 1.5;
+    font-size: 12px;
 }
 
 /*************************************/
@@ -381,6 +436,18 @@ header hr{
         margin-left: 9%;
         margin-right: 9%;
     
+    }
+
+    .img-size{
+        border-radius: 30px 30px 0px 0px;
+        margin-left: -0.25%;
+        width: 100.75%;
+        height: 150px;
+    }
+    .production .pic .paragraph-right{
+        text-align: center;
+        margin-left: 10%;
+        width: 80%;
     }
 }
 
