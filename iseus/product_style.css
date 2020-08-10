@@ -254,10 +254,12 @@ header hr{
 }
 .core-values{
     background: white;
-    padding: 0% 9% 9% 9%;
+    padding: 0% 9% 0% 9%;
     margin: 0px;
+    padding-bottom: 80px;
     display: flex;
     flex-wrap: wrap;
+    height: auto;
 }
 .title-left{
     width: 203px;
@@ -279,8 +281,7 @@ header hr{
 }
 .values-right{
     width: 911px;
-    height: 238px;
-    background: white;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
 }
@@ -314,6 +315,27 @@ header hr{
     color: #47bd53;
     margin-top: 40px;
     text-align: center;
+}
+.production{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    height: auto;
+    background: #fbfbfb;
+}
+.production .h1{
+    margin-left: 9% ;
+    margin-right: 2%;
+    margin-top: -12px;
+    text-transform: uppercase;
+    float: left;
+   
+}
+.production .hr{
+    margin-top: 0px;
+    margin-right: 9%;
+    height: 3px;
+    background: black;
+    color: black;
 }
 
 /*************************************/
@@ -350,6 +372,7 @@ header hr{
     }
     .values-right div.no-border{
         border-radius: 0px 0px 10px 10px;
+        margin-bottom: 50px;
     }
     .title-left{
         border-radius: 10px 10px 0px 0px;
@@ -357,6 +380,7 @@ header hr{
     .core-values{
         margin-left: 9%;
         margin-right: 9%;
+    
     }
 }
 
