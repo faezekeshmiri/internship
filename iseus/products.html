@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> ISEUS</title>
+    <link rel="stylesheet" href="product_style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="mobile">
+        <div class="mobile-container"></div>
+            <div class="topnav" id="topnav">
+              <a href="#" class="active">Logo</a>
+              <div id="myLinks">
+                <a href="#">Home</a>
+                <a href="#">Products/Services</a>
+                <a href="#">careers</a>
+                <a href="#">About us</a>
+                <a href="#">Contact</a>
+              </div>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
+            
+            <section class="paragraph mobile">
+              <h1>Products and Services</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                   Veritatis voluptate reprehenderit nisi?
+                   Aut quod maxime nemo dicta veniam! 
+                   Nam tempore repellendus fuga id beatae
+                   minima quas non atque dignissimos voluptatum!</p>
+            </section>
+            </div>
+    </header>
+	<header class="desktop">
+        <select name="language" class="language">
+            <option value="volvo">English</option>
+            <option value="saab">persian</option>
+          </select>
+        <form class="example" >
+            <input type="text" placeholder="Search.." name="search" class="search">
+          </form>
+
+        <hr>
+        <nav class="left">
+            <ul class="logo">
+                <li class="imgLogo"><a href="#">logo</a></li>
+            </ul>
+        </nav>
+        <nav class="right">
+			<ul class="menu">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Products/Services</a></li>
+                <li><a href="#">careers</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact</a></li>
+			</ul>
+        </nav>
+        
+         
+    </header>
+    <section class="sec1">
+        <div class="left-p">
+            <h1>Products and Services</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Quis ipsa ea quisquam, fugiat
+                 alias illo cum vero tempora odit natus neque praesentium! 
+                Cupiditate saepe modi corporis esse deleniti amet eveniet.</p>
+        </div>
+    </section>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          var y = document.getElementById("topnav");
+          if (x.style.display === "block") {
+            y.style.background = "none";
+            x.style.display = "none";
+          } else {
+            y.style.background = "white";
+            x.style.display = "block";
+          }
+        }
+        </script>
+    
+</body>
+</html>
