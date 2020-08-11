@@ -254,10 +254,12 @@ header hr{
 }
 .core-values{
     background: white;
-    padding: 0% 9% 9% 9%;
+    padding: 0% 9% 0% 9%;
     margin: 0px;
+    padding-bottom: 80px;
     display: flex;
     flex-wrap: wrap;
+    height: auto;
 }
 .title-left{
     width: 203px;
@@ -279,8 +281,7 @@ header hr{
 }
 .values-right{
     width: 911px;
-    height: 238px;
-    background: white;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
 }
@@ -315,6 +316,158 @@ header hr{
     margin-top: 40px;
     text-align: center;
 }
+.production{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    height: auto;
+    background: #fbfbfb;
+    padding-left: 9%;
+    padding-right: 9%;
+}
+.production .h1{
+    margin-right: 2%;
+    margin-top: -12px;
+    text-transform: uppercase;
+    float: left;
+   
+}
+.production .hr{
+    margin-top: 0px;
+    height: 3px;
+    background: black;
+    color: black;
+}
+.production .para p{
+    float: left;
+    line-height: 1.21;
+    letter-spacing: 1.52px;
+    text-align: left;
+    color: #292929;
+    font-size: 14px;
+    margin-bottom: 100px;
+}
+.production .pic{
+    border: 1px solid lightgray;
+    border-radius: 30px;
+    height: auto;
+    width: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 0px;
+    padding-right: 0px;
+}
+.production .left-img{
+    margin-top: -1.5px;
+    margin-bottom: -5px;
+    width: auto;
+}
+.img-size{
+    border-radius: 30px 0px 0px 30px;
+    width: 536px;
+    height: 430px;
+}
+.img-R.img-size{
+    border-radius: 0px 30px 30px 0px;
+    margin: 0px;
+    margin-top: 1px;
+}
+.img-L{
+    display: none;
+}
+.production .pic .paragraph-right{
+    width: 46%;
+    margin-left: 5%;
+    margin-right: 5.9%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.paragraph-right h1{
+    text-transform: uppercase;
+    font-size: 27px;
+}
+.title{
+    text-transform: uppercase;
+    color: #acacac;
+    font-size: 20px;
+}
+.paragraph-right h3{
+    line-height: 1.9;
+    color: #292929;
+    font-size: 18px;
+}
+.paragraph-right p{
+    font-size: 14px;
+    color: #828282;
+    line-height: 1.5;
+    font-size: 12px;
+}
+.sevices{
+    background: white;
+}
+footer{
+    background: black;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 180px;
+
+}
+footer nav{
+    text-align:end;
+    
+}
+footer .logo{
+    text-align: left;
+    top: 50px;
+}
+footer a{
+    color: white;
+    text-decoration: none ;
+    margin-top: 60px;
+    margin-right: 30px;
+}
+footer .logo{
+    text-align: left;
+    margin-left: 80px;
+    
+}
+
+footer .imgLogo a{
+      background-color: none;
+      background-image: url("img/logo.png");
+      background-repeat: no-repeat;
+      background-size: 50px;
+      display: inline-block;
+      height: 140px;
+      width: 300px;
+      position: relative;
+      top: -50px;
+      text-indent: -9999999px;  
+      
+    
+}
+footer .menu a{
+    position: relative;
+    top: 40px;
+}
+footer .menu{
+    margin-right: 80px;
+}
+footer h1{
+    color: white;
+    margin-top: 350px;
+    font-size: 50px;
+    
+}
+.Copyright{
+    height: 40px;
+    background: #232323;
+    margin-top:180px;
+    padding-top: 15px;
+    padding-left: 90px;
+}
+
 
 /*************************************/
 @media screen and (max-width: 800px){
@@ -350,6 +503,7 @@ header hr{
     }
     .values-right div.no-border{
         border-radius: 0px 0px 10px 10px;
+        margin-bottom: 50px;
     }
     .title-left{
         border-radius: 10px 10px 0px 0px;
@@ -357,7 +511,48 @@ header hr{
     .core-values{
         margin-left: 9%;
         margin-right: 9%;
+    
     }
+
+    .img-size{
+        border-radius: 30px 30px 0px 0px;
+        margin-left: -0.25%;
+        width: 100.75%;
+        height: 150px;
+    }
+    .production .pic .paragraph-right{
+        text-align: center;
+        margin-left: 10%;
+        width: 80%;
+    }
+    .img-R{
+        display: none;
+    }
+    .img-L{
+        display: block;
+    }
+    footer .logo{
+        margin-left: 10%;
+    }
+    footer .imgLogo a{
+        height: 75px;
+    }
+    footer .left{
+        width: 100%;
+        margin-left: -50px;
+    }
+    footer .right{
+        width: 100%;
+        float: left;
+        margin-left: 0px;
+    }
+    footer .menu{
+        margin-right: 5%;
+    }
+    footer a{
+        margin-right: 5px;
+    }
+    
 }
 
 
