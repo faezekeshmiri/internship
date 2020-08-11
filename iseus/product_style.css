@@ -402,6 +402,9 @@ header hr{
     line-height: 1.5;
     font-size: 12px;
 }
+.services{
+    background: white;
+}
 
 /*************************************/
 @media screen and (max-width: 800px){
