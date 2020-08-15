@@ -6,6 +6,7 @@ header div .lang-btn{
     background:none;
     border-radius: 20px;
     width: 130px;
+    color: white;
 }
 header .lang{
     float: right;
@@ -16,7 +17,7 @@ header .lang{
 }
 header .head-line{
     height: 70px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
 }
 form.example input[type=text] {
     padding: 10px;
@@ -45,3 +46,44 @@ form.example input[type=text] {
     height: 35px;
     opacity: 0.42;
 }
+header .menu{
+    background: none;
+    border: none;
+    margin-right: 50px;
+}
+header .menu #menu-opt a.opt{
+    color: white;
+    margin-right: 30px;
+}
+header .menu #menu-opt a.opt:hover{
+    border-bottom: 1px white solid;
+}
+header .menu #logo{
+    background-image: url("img/logo.png");
+    background-repeat: no-repeat;
+    background-size: 50px;
+    display: inline-block;
+    height: 140px;
+    width: 300px;
+    position: relative;
+    top: 15px;
+    text-indent: -9999999px; 
+    margin-left: 80px;
+}
+header .h1{
+    margin-right: 2%;
+    margin-top: -12px;
+    text-transform: uppercase;
+    float: left;
+    margin-left: 7%;
+    color: white;
+}
+header .hr{
+    margin-top: 0px;
+    height: 1.5px;
+    background: white;
+    color: white;
+    margin-right: 7%;
+    opacity: 0.85;
+}
+
