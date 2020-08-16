@@ -1,6 +1,9 @@
 header{
-    height: 950px;
+    height: auto;
+    padding-bottom: 50px;
     background-image: linear-gradient(119deg, #6666cc, #00b79e 99%);
+    border-bottom-left-radius: 45% 5%;
+    border-bottom-right-radius: 45% 5%;
 }
 header div .lang-btn{
     background:none;
