@@ -49,8 +49,85 @@
         <h1 class="h1">WRITE US</h1>
         <hr class="hr">
       </div>
+    
+    <div class="grid-container forms">
+      <div class="grid-item">
+        <div class="form-group">
+          <label for="usr">Title</label>
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle title-btn" type="button" id="menu1" data-toggle="dropdown">choose your title...
+            <span class="caret"></span></button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+              <li role="presentation"><a role="menuitem" href="#">Mr.</a></li>
+              <li role="presentation"><a role="menuitem" href="#">Mrs.</a></li>
+              <li role="presentation"><a role="menuitem" href="#">Miss.</a></li>
+              <li role="presentation"><a role="menuitem" href="#">Dr.</a></li>
+              <li role="presentation"><a role="menuitem" href="#">Prof.</a></li>
+            </ul>
+        </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="form-group">
+          <label for="usr">Email</label>
+          <input type="text" class="form-control" id="usr" value="Enter your email...">
+          </div>
+      </div>
+      <div class="grid-item">
+        <div class="form-group">
+        <label for="usr">Full Name</label>
+        <input type="text" class="form-control" id="usr" value="Enter your full name...">
+        </div>
+      </div>  
+      <div class="grid-item">
+        <div class="form-group">
+          <label for="usr">Phone Number</label>
+          <input type="tel" class="form-control" id="usr" value="Enter your phone number...">
+          </div>
+      </div>
+      <div class="grid-item">
+        <div class="form-group">
+          <label for="usr">Message Subject</label>
+          <input type="text" class="form-control" id="usr" value="Enter subject of message...">
+          </div>
+      </div>
+      <div class="grid-item">
+        <div class="form-group">
+          <label for="file-upload" class="custom-file-upload">Upload File</label>
+          <div class="upload-box">
+            <i class="glyphicon glyphicon-cloud-upload upload-icon"></i>
+            <span>Drop files here to upload or</span>
+            <button class="upload" onclick="getFile()">choose file</button>
+            <input type="file" class="form-control file-upload" id="file-upload">
+          </div>
+          </div>
+      </div>  
+      <div class="grid-item">
+        <div class="form-group">
+          <label for="msg">Message</label>
+          <input type="text" class="form-control msg-box" id="msg" value="Type your message...">
+          </div>
+      </div> 
+    </div>
+    <button class="send">send</button>
+    
 
 </header>
-
+<form class="md-form">
+  <div class="file-field">
+    <a class="btn-floating peach-gradient mt-0 float-left">
+      <i class="fas fa-paperclip" aria-hidden="true"></i>
+      <input type="file">
+    </a>
+    <div class="file-path-wrapper">
+      <input class="file-path validate" type="text" placeholder="Upload your file">
+    </div>
+  </div>
+</form>
+<script>
+  function getFile(){
+     document.getElementById("file-upload").click();
+  }
+</script>
 </body>
 </html>
