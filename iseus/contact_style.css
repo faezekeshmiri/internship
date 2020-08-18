@@ -148,6 +148,19 @@ header .send{
     background-color: #ffffff;
     border: none;
 }
+.contact{
+    padding-left: 7%;
+    padding-right: 7%;
+}
+.contact .d-flex .p-2{
+    text-transform: uppercase;
+    font-size: 38px;
+    font-weight: 600;
+}
+.contact .d-flex .p-2.flex-grow-1{
+    border-bottom: 3px solid black; 
+    height:40px;
+}
 
 
 
