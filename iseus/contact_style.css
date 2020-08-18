@@ -5,18 +5,19 @@ header{
     border-bottom-left-radius: 45% 5%;
     border-bottom-right-radius: 45% 5%;
 }
-header div .lang-btn{
-    background:none;
-    border-radius: 20px;
-    width: 130px;
-    color: white;
-}
 header .lang{
     float: right;
     margin-right: 120px;
     margin-top: 15px;
     margin-left: 30px;
 
+}
+header .lang .dropdown-toggle{
+    background:none;
+    border-radius: 20px;
+    width: 130px;
+    color: white;
+    border: 1px solid white;
 }
 header .head-line{
     height: 70px;
@@ -54,27 +55,26 @@ header .menu{
     border: none;
     margin-right: 50px;
 }
-header .menu #menu-opt a.opt{
+header .menu .nav-item .nav-link{
     color: white;
     margin-right: 30px;
 }
-header .menu #menu-opt a.opt:hover{
+header .menu .nav-item .nav-link:hover{
     border-bottom: 1px white solid;
 }
-header .menu #logo{
+header .menu .navbar-brand{
     background-image: url("img/logo.png");
     background-repeat: no-repeat;
     background-size: 50px;
     display: inline-block;
     height: 140px;
-    width: 300px;
+    width: 200px;
     position: relative;
     top: 15px;
     text-indent: -9999999px; 
     margin-left: 80px;
 }
 header .h1{
-    margin-right: 2%;
     margin-top: -12px;
     text-transform: uppercase;
     float: left;
@@ -88,46 +88,33 @@ header .hr{
     color: white;
     margin-right: 7%;
     opacity: 0.85;
+    width: 70%;
+    
 }
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto;
-    padding-left: 4%;
-  }
-  
-header .form-group .dropdown .title-btn{
-    background: none !important;
-    width: 200px;
-    height: 44px;
-    margin-top: 5px;
+header .dropdown .dropdown-toggle{
+    background:none;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid white;
+}
+.container .col-sm label{
+    margin-top: 20px;
     color: white;
 }
-header .form-group{
-    margin-top: 18px;
-    padding-left: 7%;
-    color: white;
-}
-header .forms{
-    margin-top: 60px;
-}
-header .form-group input{
-    width: 55%;
-    height: 44px;
+.container .col-sm input{
     background: none;
+    border: 1px solid white;
     color: white;
-    margin-top: 5px;
+    width: 75%;
 }
-header .form-group .msg-box{
+#msg{
+    width: 36.5%;
     height: 150px;
 }
-header .form-group .upload-box{
-    border: 1px dashed;
-    width: 55%;
-    height: 44px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-header .form-group input[type="file"] {
+#file{
+    background: none;
+    border: none;
+    color: transparent;
     position: absolute;
     width: 1px;
     height: 1px;
@@ -135,25 +122,33 @@ header .form-group input[type="file"] {
     margin: -1px;
     overflow: hidden;
     clip: rect(0,0,0,0);
-    border: 0;
 }
-header .form-group .upload-box .upload-icon{
-    margin-top: 12px;
-    margin-left: 5%;
-    margin-right: 5px;
+.container .col-sm .upload-box{
+    width: 75%;
+    border-radius: 5px;
+    background: none;
+    border: 1px dashed white;
+    color: white;
+    padding-left: 5%;
+    padding-top: 5px;
+    padding-bottom: 2%;
 }
-header .form-group .upload-box button{
+.container .col-sm .upload-box span button{
     background: none;
     border: none;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid white;
+    color: white;
 }
 header .send{
-    margin-left: 7%;
-    margin-top: 10px;
+    margin-left: 13%;
+    margin-top: 20px;
     width: 144px;
     height: 40px;
     border-radius: 22px;
     background-color: #ffffff;
     border: none;
 }
+
+
+
 

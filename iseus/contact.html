@@ -5,117 +5,141 @@
   <link rel="stylesheet" href="contact_style.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</head>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script></head>
 <body>
 <header>
     <div class="head-line">
-    <div class="dropdown lang">
-        <button class="btn btn-default dropdown-toggle lang-btn" type="button" id="menu1" data-toggle="dropdown">english
-        <span class="caret"></span></button>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-          <li role="presentation"><a role="menuitem" href="#">english</a></li>
-          <li role="presentation"><a role="menuitem" href="#">germany</a></li>
-        </ul>
-    </div>
+        <div class="dropdown lang">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+              english
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#"> english</a>
+              <a class="dropdown-item" href="#">germany</a>
+            </div>
+          </div>
     <form class="example" >
         <input type="text" placeholder="Search..." name="search" class="search">
     </form>
     </div>
-    <nav class="navbar navbar-inverse menu">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span> 
-              </button>
-            <a class="navbar-brand" href="#" id="logo">WebSiteName</a>
-          </div>
-          <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav navbar-right" id="menu-opt">
-            <li><a href="#" class="opt"> Home</a></li>
-            <li><a href="#" class="opt"> Products/Services</a></li>
-            <li><a href="#" class="opt"> careers</a></li>
-            <li><a href="#" class="opt"> About us</a></li>
-            <li><a href="#" class="opt"> Contact</a></li>
-          </ul>
-        </div>
+    <nav class="navbar navbar-expand-lg navbar-light menu">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto"> 
+                <li class="nav-item"> 
+                    <a class="nav-link" href="#"> 
+                        Home 
+                    </a> 
+                </li> 
+                <li class="nav-item"> 
+                    <a class="nav-link" href="#"> 
+                        Products/Services 
+                    </a> 
+                </li> 
+                <li class="nav-item"> 
+                    <a class="nav-link" href="#"> 
+                        careers 
+                    </a> 
+                </li> 
+                <li class="nav-item"> 
+                    <a class="nav-link" href="#"> 
+                        About us 
+                    </a> 
+                </li> 
+                <li class="nav-item"> 
+                    <a class="nav-link" href="#"> 
+                        contact 
+                    </a> 
+                </li> 
+            </ul> 
         </div>
       </nav>
-      <div >
+      <div style="display: flex;">
         <h1 class="h1">WRITE US</h1>
         <hr class="hr">
       </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <label for="title">Title</label>
+            <div class="dropdown">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="title">
+                  choose your title...
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#"> Mr.</a>
+                  <a class="dropdown-item" href="#">Mrs.</a>
+                  <a class="dropdown-item" href="#">Miss.</a>
+                  <a class="dropdown-item" href="#">Dr.</a>
+                  <a class="dropdown-item" href="#">Prof.</a>
+                </div>
+              </div>
+          </div>
+          <div class="col-sm">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" value="Enter your email...">
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+              <label for="name">Full Name</label>
+              <input type="text" class="form-control" id="name" value="Enter your full name...">
+            </div>
+            <div class="col-sm">
+              <label for="phone">Phone Number</label>
+              <input type="tel" class="form-control" id="phone" value="Enter your phone number...">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm">
+              <label for="subject">Message Subject</label>
+              <input type="text" class="form-control" id="subject" value="Enter subject of message...">
+            </div>
+            <div class="col-sm">
+              <label for="file">Upload File</label>
+              <div class="upload-box">
+                <i class='fas fa-cloud-upload-alt'></i>
+                <span>Drop files here to upload or <button onclick="getFile()">choose file</button> </span>
+                <input type="file" class="form-control" id="file" value="Enter subject of message...">
+              </div>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-sm">
+              <label for="msg">Message</label>
+              <input type="text" class="form-control msg-box" id="msg" value="Type your message...">
+            </div>
+          </div>
+      </div>
     
-    <div class="grid-container forms">
-      <div class="grid-item">
-        <div class="form-group">
-          <label for="usr">Title</label>
-          <div class="dropdown">
-            <button class="btn btn-default dropdown-toggle title-btn" type="button" id="menu1" data-toggle="dropdown">choose your title...
-            <span class="caret"></span></button>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-              <li role="presentation"><a role="menuitem" href="#">Mr.</a></li>
-              <li role="presentation"><a role="menuitem" href="#">Mrs.</a></li>
-              <li role="presentation"><a role="menuitem" href="#">Miss.</a></li>
-              <li role="presentation"><a role="menuitem" href="#">Dr.</a></li>
-              <li role="presentation"><a role="menuitem" href="#">Prof.</a></li>
-            </ul>
-        </div>
-        </div>
-      </div>
-      <div class="grid-item">
-        <div class="form-group">
-          <label for="usr">Email</label>
-          <input type="text" class="form-control" id="usr" value="Enter your email...">
-          </div>
-      </div>
-      <div class="grid-item">
-        <div class="form-group">
-        <label for="usr">Full Name</label>
-        <input type="text" class="form-control" id="usr" value="Enter your full name...">
-        </div>
-      </div>  
-      <div class="grid-item">
-        <div class="form-group">
-          <label for="usr">Phone Number</label>
-          <input type="tel" class="form-control" id="usr" value="Enter your phone number...">
-          </div>
-      </div>
-      <div class="grid-item">
-        <div class="form-group">
-          <label for="usr">Message Subject</label>
-          <input type="text" class="form-control" id="usr" value="Enter subject of message...">
-          </div>
-      </div>
-      <div class="grid-item">
-        <div class="form-group">
-          <label for="file-upload" class="custom-file-upload">Upload File</label>
-          <div class="upload-box">
-            <i class="glyphicon glyphicon-cloud-upload upload-icon"></i>
-            <span>Drop files here to upload or</span>
-            <button class="upload" onclick="getFile()">choose file</button>
-            <input type="file" class="form-control file-upload" id="file-upload">
-          </div>
-          </div>
-      </div>  
-      <div class="grid-item">
-        <div class="form-group">
-          <label for="msg">Message</label>
-          <input type="text" class="form-control msg-box" id="msg" value="Type your message...">
-          </div>
-      </div> 
-    </div>
     <button class="send">send</button>
-    
-
 </header>
+<section class="contact">
+  <div >
+    <h1 class="h1">contact us</h1>
+    <hr class="hr">
+  </div>
+ 
+</section>
 <script>
   function getFile(){
-     document.getElementById("file-upload").click();
+     document.getElementById("file").click();
   }
 </script>
 </body>
