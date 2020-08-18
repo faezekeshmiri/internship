@@ -161,6 +161,39 @@ header .send{
     border-bottom: 3px solid black; 
     height:40px;
 }
+.contact .contact-info .row .col-sm .info{
+    margin-top: 20px;
+    border-radius: 15px;
+    text-align: center;
+    min-height: 25px;
+    background-color: lightgray;
+}
+.contact .contact-info .row .col-sm div .icon{
+    float: left;
+    margin-left: 15px;
+    padding-right: 10px;
+    margin-top: 2px;
+    border-right: 1px solid black;
+}
+#social-media a{
+    margin-right: 6px;
+    color: transparent;
+    margin-top: 6px;
+    background-repeat: no-repeat;
+}
+#twitter{
+    background-image: url("img/Group 127.png");
+}
+#fb{
+    background-image: url("img/Group 123.png");
+}
+#insta{
+    background-image: url("img/Group 118.png");
+}
+#linkdin{
+    margin-left: 4px;
+    background-image: url("img/Group 146.png");
+}
 
 
 
