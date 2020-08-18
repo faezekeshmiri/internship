@@ -161,6 +161,9 @@ header .send{
     border-bottom: 3px solid black; 
     height:40px;
 }
+.contact .contact-info{
+    margin-top: 50px;
+}
 .contact .contact-info .row .col-sm .info{
     margin-top: 20px;
     border-radius: 15px;
