@@ -1,0 +1,154 @@
+header{
+    height: auto;
+    padding-bottom: 50px;
+    background-image: linear-gradient(119deg, #6666cc, #00b79e 99%);
+    border-bottom-left-radius: 45% 5%;
+    border-bottom-right-radius: 45% 5%;
+}
+header .lang{
+    float: right;
+    margin-right: 120px;
+    margin-top: 15px;
+    margin-left: 30px;
+
+}
+header .lang .dropdown-toggle{
+    background:none;
+    border-radius: 20px;
+    width: 130px;
+    color: white;
+    border: 1px solid white;
+}
+header .head-line{
+    height: 70px;
+    border-bottom: 1px solid white;
+}
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 12px;
+    float: right;
+    width: 23%;
+    margin-top: 15px;
+    right: 290px;
+    border-radius: 24px;
+    position: absolute;
+}
+
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .search{
+    background-color: #ffffff;
+    border: none;
+    background-image: url("img/Path 217.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position: 95%;
+    height: 35px;
+    opacity: 0.42;
+}
+header .menu{
+    background: none;
+    border: none;
+    margin-right: 50px;
+}
+header .menu .nav-item .nav-link{
+    color: white;
+    margin-right: 30px;
+}
+header .menu .nav-item .nav-link:hover{
+    border-bottom: 1px white solid;
+}
+header .menu .navbar-brand{
+    background-image: url("img/logo.png");
+    background-repeat: no-repeat;
+    background-size: 50px;
+    display: inline-block;
+    height: 140px;
+    width: 200px;
+    position: relative;
+    top: 15px;
+    text-indent: -9999999px; 
+    margin-left: 80px;
+}
+header .h1{
+    margin-top: -12px;
+    text-transform: uppercase;
+    float: left;
+    margin-left: 7%;
+    color: white;
+}
+header .hr{
+    margin-top: 0px;
+    height: 1.5px;
+    background: white;
+    color: white;
+    margin-right: 7%;
+    opacity: 0.85;
+    width: 70%;
+    
+}
+header .dropdown .dropdown-toggle{
+    background:none;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid white;
+}
+.container .col-sm label{
+    margin-top: 20px;
+    color: white;
+}
+.container .col-sm input{
+    background: none;
+    border: 1px solid white;
+    color: white;
+    width: 75%;
+}
+#msg{
+    width: 36.5%;
+    height: 150px;
+}
+#file{
+    background: none;
+    border: none;
+    color: transparent;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+}
+.container .col-sm .upload-box{
+    width: 75%;
+    border-radius: 5px;
+    background: none;
+    border: 1px dashed white;
+    color: white;
+    padding-left: 5%;
+    padding-top: 5px;
+    padding-bottom: 2%;
+}
+.container .col-sm .upload-box span button{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+header .send{
+    margin-left: 13%;
+    margin-top: 20px;
+    width: 144px;
+    height: 40px;
+    border-radius: 22px;
+    background-color: #ffffff;
+    border: none;
+}
+
+
+
+

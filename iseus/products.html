@@ -34,15 +34,26 @@
             </div>
     </header>
 	<header class="desktop">
-        <select name="language" class="language">
-            <option value="volvo">English</option>
-            <option value="saab">persian</option>
-          </select>
+    <div class="top">
+      <div class="div">
+        <button class="drop-down" onclick="dropdown('lang')">
+          <div>
+              <img src="img/en.png" alt="flag" id="flag">
+              <span id="selected">en</span>
+              <i class="arrow"></i> 
+          </div> 
+        </button>
+      </div>
+      <div class="list div" id="lang">
+        <ul>
+            <li><button class="option" id="option1" onclick="select('option1','lang')">english</button></li>
+            <li><button class="option"  id="option2" onclick="select('option2','lang')">germany</button></li>
+        </ul>
+      </div>
         <form class="example" >
-            <input type="text" placeholder="Search.." name="search" class="search">
-          </form>
-
-        <hr>
+            <input type="text" placeholder="Search..." name="search" class="search">
+        </form>
+      </div>
         <nav class="left">
             <ul class="logo">
                 <li class="imgLogo"><a href="#">logo</a></li>
@@ -70,9 +81,10 @@
         </div>
     </section>
     <section class="core-values">
-      <div class="title-left">our core values</div>
+      
       <div class="values-right">
-      <div>
+      <div class="title-left" id="title">our core values</div>
+      <div class="triangle">
         <div class="value-icon"><img src="img/handshake.png" alt="value" class="icon"></div>
         <h2>Collaboration</h2>
       </div>
@@ -119,7 +131,7 @@
       </span>
 
       </div>
-      <div class="pic">
+      <div class="pic img-R">
         <div class="left-img">
           <img src="img/img2.jpg" alt="img" class="img-size img-L">
         </div>
@@ -134,10 +146,7 @@
                Lorem ipsum dolor sit amet, consectetur adipisicing
                elit.
                </p>
-      </span>
-      <div class="left-img">
-        <img src="img/img2.jpg" alt="img" class="img-size img-R">
-      </div>
+        </span>
       </div>
       <div class="pic">
         <div class="left-img">
@@ -154,7 +163,7 @@
                Lorem ipsum dolor sit amet, consectetur adipisicing
                elit.
                </p>
-      </span>
+        </span>
 
       </div>
     </section>
@@ -191,7 +200,7 @@
       </span>
 
       </div>
-      <div class="pic">
+      <div class="pic img-R">
         <div class="left-img">
           <img src="img/img2.jpg" alt="img" class="img-size img-L">
         </div>
@@ -207,9 +216,6 @@
                elit.
                </p>
       </span>
-      <div class="left-img">
-        <img src="img/img2.jpg" alt="img" class="img-size img-R">
-      </div>
       </div>
       <div class="pic">
         <div class="left-img">
@@ -236,7 +242,7 @@
                 <li class="imgLogo"><a href="#">logo</a></li>
             </ul>
         </nav>
-        <nav class="right">
+      <nav class="right">
 			<ul class="menu">
 				<li><a href="#">Home</a></li>
 				<li><a href="#">Products/Services</a></li>
@@ -245,8 +251,31 @@
                 <li><a href="#">Contact</a></li>
 			</ul>
         </nav>
+        
+        <div class="div-foo">
+        <button class="drop-down" onclick="dropdown('lang-footer')">
+          <div>
+              <img src="img/en.png" alt="flag" id="flag2">
+              <span id="selected2">en</span>
+              <i class="arrow"></i> 
+          </div> 
+        </button>
+        </div>
+        <div class="list div-foo" id="lang-footer">
+          <ul>
+              <li><button class="option" id="option1-foo" onclick="select('option1-foo','lang-footer')">english</button></li>
+              <li><button class="option"  id="option2-foo" onclick="select('option2-foo','lang-footer')">germany</button></li>
+          </ul>
+        </div>
+        <nav class="right">
+          <ul class="menu">
+                    <li class="logo-nav" id="twiter"><a href="#"></a></li>
+                    <li class="logo-nav" id="youtube"><a href="#"></a></li>
+          </ul>
+        </nav>
+      
         <div class="Copyright">Copyright © 2020 iSEUS. All rights reserved.</div>
-
+      
     </footer>
     <script>
         function myFunction() {
@@ -260,7 +289,35 @@
             x.style.display = "block";
           }
         }
-        </script>
+        function dropdown(id) {
+          var x = document.getElementById(id);
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        function select(sel_id , list_id){
+            var x = document.getElementById(list_id);
+            var y = document.getElementById("selected");
+            var y2 = document.getElementById("selected2");
+            var sel = document.getElementById(sel_id);
+            var flag = document.getElementById("flag");
+            var flag2 = document.getElementById("flag2");
+            if(sel.innerText==="english") {
+                flag.src = 'img/en.png';
+                flag2.src = 'img/en.png';
+                y.innerText="en";
+                y2.innerText="en";
+            }else if(sel.innerText==="germany"){
+                flag.src  = 'img/ge.png';
+                flag2.src  = 'img/ge.png';
+                y.innerText="gr";
+                y2.innerText="gr";
+            }
+            x.style.display = "none";
+        }
+      </script>
     
 </body>
 </html>
