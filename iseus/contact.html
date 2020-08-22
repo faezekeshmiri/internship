@@ -23,11 +23,12 @@
     <div class="head-line">
         <div class="dropdown lang">
             <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+              <img src="img/en.png" alt="flag">
               english
             </button>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="#"> english</a>
-              <a class="dropdown-item" href="#">germany</a>
+              <a class="dropdown-item" href="#"> <img src="img/en.png" alt="english"> english</a>
+              <a class="dropdown-item" href="#"><img src="img/ge.png" alt="germany"> germany</a>
             </div>
           </div>
     <form class="example" >
@@ -35,7 +36,7 @@
     </form>
     </div>
     <nav class="navbar navbar-expand-lg navbar-light menu">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <span class="navbar-brand" href="#">Navbar</span>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -74,13 +75,13 @@
         <h1 class="h1">WRITE US</h1>
         <hr class="hr">
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm">
+      <div class="container-fluid" style=" padding-left: 7%; padding-right: 7%;">
+        <div class="row justify-content-between">
+          <div class="col-md-4">
             <label for="title">Title</label>
             <div class="dropdown">
                 <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="title">
-                  choose your title...
+                 <span> choose your title...</span>
                 </button>
                 <div class="dropdown-menu">
                   <a class="dropdown-item" href="#"> Mr.</a>
@@ -91,39 +92,39 @@
                 </div>
               </div>
           </div>
-          <div class="col-sm">
+          <div class="col-md-4">
             <label for="email">Email</label>
-            <input type="email" class="form-control" id="email" value="Enter your email...">
+            <input type="email" class="form-control" id="email" placeholder="Enter your email...">
           </div>
         </div>
-        <div class="row">
-            <div class="col-sm">
+        <div class="row justify-content-between">
+            <div class="col-md-4">
               <label for="name">Full Name</label>
-              <input type="text" class="form-control" id="name" value="Enter your full name...">
+              <input type="text" class="form-control" id="name" placeholder="Enter your full name...">
             </div>
-            <div class="col-sm">
+            <div class="col-md-4">
               <label for="phone">Phone Number</label>
-              <input type="tel" class="form-control" id="phone" value="Enter your phone number...">
+              <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number...">
             </div>
           </div>
-          <div class="row">
-            <div class="col-sm">
+          <div class="row justify-content-between">
+            <div class="col-md-4">
               <label for="subject">Message Subject</label>
-              <input type="text" class="form-control" id="subject" value="Enter subject of message...">
+              <input type="text" class="form-control" id="subject" placeholder="Enter subject of message...">
             </div>
-            <div class="col-sm">
+            <div class="col-md-4">
               <label for="file">Upload File</label>
               <div class="upload-box">
                 <i class='fas fa-cloud-upload-alt'></i>
                 <span>Drop files here to upload or <button onclick="getFile()">choose file</button> </span>
-                <input type="file" class="form-control" id="file" value="Enter subject of message...">
+                <input type="file" class="form-control" id="file">
               </div>
               </div>
           </div>
-          <div class="row">
-            <div class="col-sm">
+          <div class="row justify-content-between">
+            <div class="col-md-4">
               <label for="msg">Message</label>
-              <input type="text" class="form-control msg-box" id="msg" value="Type your message...">
+              <textarea class="form-control msg-box" id="msg" placeholder="Type your message..."></textarea>
             </div>
           </div>
       </div>
@@ -135,26 +136,70 @@
     <div class="p-2 ">Contact us</div>
     <div class="p-2  flex-grow-1"></div>
   </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm">
-        <div class="container contact-info">
+  <div class="container-fluid" style=" padding-left: 7%;padding-right: 7%;">
+    <div class="row justify-content-between">
+      <div class="col-md-6" style=" padding-left: 2% ;">
+        <div class="container contact-info" style="padding-left: 0%;">
           <div class="row">
             <div class="col-sm"><div class="info"><img src="img/room-24px.png" alt="icon" class="icon"> <span>Address</span></div><div style="font-size: 15px;font-weight: 500;">Cecilia Chapman, 711-2880 Nulla St., Mankato</div></div>
-            <div class="col-sm"><div class="info"><img src="img/mail_outline-24px.png" alt="icon" class="icon"> <span>Email</span></div><div style="font-size: 15px;font-weight: 500;">tejoy28460@mailart.top</div></div>
+            <div class="col-sm"><div class="info"><img src="img/room-24px.png" alt="icon" class="icon"> <span>Email</span></div><div style="font-size: 15px;font-weight: 500;">tejoy28460@mailart.top</div></div>
           </div>
           <div class="row">
-            <div class="col-sm"><div class="info"><img src="img/phone-24px.png" alt="icon" class="icon"> <span>Phone</span></div><div style="font-size: 15px;font-weight: 500;">+49-89-636-48018</div></div>
-            <div class="col-sm"><div class="info"><img src="img/internet.png" alt="icon" class="icon"> <span>Social Media</span></div><div class="d-flex" id="social-media" ><a href="#" id="twitter">twitter</a><a href="#" id="fb">faceB</a><a href="#" id="insta">insta</a><a href="#" id="linkdin">linkdin</a></div></div>
+            <div class="col-sm"><div class="info"><img src="img/room-24px.png" alt="icon" class="icon"> <span>Phone</span></div><div style="font-size: 15px;font-weight: 500;">+49-89-636-48018</div></div>
+            <div class="col-sm"><div class="info"><img src="img/room-24px.png" alt="icon" class="icon"> <span>Social Media</span></div><div class="d-flex" id="social-media" ><a href="#" id="twitter">twitter</a><a href="#" id="fb">faceB</a><a href="#" id="insta">insta</a><a href="#" id="linkdin">linkdin</a></div></div>
           </div>
         </div>
       </div>
-      <div class="col-sm"><img src="img/Capture.png" alt="map" style="height: 80%;"></div>
+      <div class="col-md-4" style=" padding-right: 1%;" ><img src="img/Capture.png" alt="map" style="height: 100%;width: 100%;"></div>
     </div>
   </div>
   
+  
  
 </section>
+<footer style="background: black;height: auto; padding: 0%;">
+  <div class="container-fluid" style="padding-left: 8%;padding-right: 8%;" >
+    <div class="row justify-content-between">
+      <div class="col-md-2" style="color: white;padding: 0%;">
+        <img src="img/logo.png" alt="logo" style="width: 50px; margin-top: 20px; margin-bottom: 20px;">
+      </div>
+      <div class="col-12 col-md-8 col-lg-8" style="color: white; padding: 0PX;">
+        <ul class="menu" style="padding-left: 0%;">
+          <li class="home"><a href="#">Home</a></li>
+          <li><a href="#">Products/Services</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row justify-content-between">
+      <div class="col-12" style="color: white;padding: 0%;">
+        <div class="dropdown lang" style="float: left;margin-left: 0%;">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            <img src="img/en.png" alt="flag">
+            english
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#"> <img src="img/en.png" alt="english"> english</a>
+            <a class="dropdown-item" href="#"><img src="img/ge.png" alt="germany"> germany</a>
+          </div>
+        </div>
+        <ul class="menu s-media">
+          <li><a href="#" id="twitter">twitter</a></li>
+          <li><a href="#" id="fb">faceB</a></li>
+          <li><a href="#" id="insta">insta</a></li>
+          <li><a href="#" id="linkdin">linkdin</a></li>
+        </ul>
+      </div>
+        
+      </div>
+    </div>
+  
+  
+  <div class="Copyright">Copyright © 2020 iSEUS. All rights reserved.</div>
+
+</footer> 
 <script>
   function getFile(){
      document.getElementById("file").click();
