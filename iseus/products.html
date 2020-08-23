@@ -12,11 +12,11 @@
             <div class="topnav" id="topnav">
               <a href="#" class="active">Logo</a>
               <div id="myLinks">
-                <a href="#">Home</a>
+                <a href="index.html">Home</a>
                 <a href="#">Products/Services</a>
                 <a href="#">careers</a>
                 <a href="#">About us</a>
-                <a href="#">Contact</a>
+                <a href="contact.html">Contact</a>
               </div>
               <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
@@ -39,33 +39,40 @@
         <button class="drop-down" onclick="dropdown('lang')">
           <div>
               <img src="img/en.png" alt="flag" id="flag">
-              <span id="selected">en</span>
-              <i class="arrow"></i> 
+              <span id="selected" style="position: relative;top: -5px;">en</span>
+              <img src="img/icons8-sort-down-24.png" alt="arrow" class="arrow"> 
           </div> 
         </button>
-      </div>
+      
       <div class="list div" id="lang">
         <ul>
-            <li><button class="option" id="option1" onclick="select('option1','lang')">english</button></li>
-            <li><button class="option"  id="option2" onclick="select('option2','lang')">germany</button></li>
+            <li><button class="option" onclick="select('option1','lang')">
+              <img src="img/en.png" alt="en" style="width: 20px;height: 20px;border-radius: 10px; margin-right: 12px;">
+              <span id="option1" style="position: relative;top: -5px;">english</span>
+            </button></li>
+            <li><button class="option" onclick="select('option2','lang')">
+              <img src="img/ge.png" alt="ge" style="width: 20px;height: 20px;border-radius: 10px; margin-right: 4px;">
+              <span id="option2" style="position: relative;top: -5px;">germany</span>
+            </button></li>
         </ul>
       </div>
+    </div>
         <form class="example" >
             <input type="text" placeholder="Search..." name="search" class="search">
         </form>
       </div>
         <nav class="left">
             <ul class="logo">
-                <li class="imgLogo"><a href="#">logo</a></li>
+                <li class="imgLogo"><span>logo</span></li>
             </ul>
         </nav>
         <nav class="right">
 			<ul class="menu">
-				<li><a href="#">Home</a></li>
+				<li><a href="index.html">Home</a></li>
 				<li><a href="#">Products/Services</a></li>
-                <li><a href="#">careers</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Contact</a></li>
+        <li><a href="#">careers</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="contact.html">Contact</a></li>
 			</ul>
         </nav>
         
@@ -169,7 +176,7 @@
     </section>
     <section class="production services">
       <div >
-        <h1 class="h1">production</h1>
+        <h1 class="h1">Services</h1>
         <hr class="hr">
       </div>
       <div class="para">
@@ -239,16 +246,16 @@
     <footer>
         <nav class="left">
             <ul class="logo">
-                <li class="imgLogo"><a href="#">logo</a></li>
+                <li class="imgLogo"><span href="#">logo</span></li>
             </ul>
         </nav>
       <nav class="right">
 			<ul class="menu">
-				<li><a href="#">Home</a></li>
+				<li><a href="index.html">Home</a></li>
 				<li><a href="#">Products/Services</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Contact</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="contact.html">Contact</a></li>
 			</ul>
         </nav>
         
@@ -256,17 +263,24 @@
         <button class="drop-down" onclick="dropdown('lang-footer')">
           <div>
               <img src="img/en.png" alt="flag" id="flag2">
-              <span id="selected2">en</span>
-              <i class="arrow"></i> 
+              <span id="selected2" style="position: relative;top: -5px;">en</span>
+              <img src="img/icons8-sort-down-24 (2).png" alt="arrow" class="arrow"> 
           </div> 
         </button>
-        </div>
+       
         <div class="list div-foo" id="lang-footer">
           <ul>
-              <li><button class="option" id="option1-foo" onclick="select('option1-foo','lang-footer')">english</button></li>
-              <li><button class="option"  id="option2-foo" onclick="select('option2-foo','lang-footer')">germany</button></li>
+              <li><button class="option"onclick="select('option1-foo','lang-footer')">
+                <img src="img/en.png" alt="en" style="width: 20px;height: 20px;border-radius: 10px; margin-right: 12px;">
+                <span id="option1-foo" style="position: relative;top: -5px;">english</span>
+              </button></li>
+              <li><button class="option"  onclick="select('option2-foo','lang-footer')">
+                <img src="img/ge.png" alt="ge" style="width: 20px;height: 20px;border-radius: 10px; margin-right: 4px;">
+                <span id="option2-foo" style="position: relative;top: -5px;">germany</span>
+              </button></li>
           </ul>
         </div>
+      </div>
         <nav class="right">
           <ul class="menu">
                     <li class="logo-nav" id="twiter"><a href="#"></a></li>
@@ -305,6 +319,7 @@
             var flag = document.getElementById("flag");
             var flag2 = document.getElementById("flag2");
             if(sel.innerText==="english") {
+              
                 flag.src = 'img/en.png';
                 flag2.src = 'img/en.png';
                 y.innerText="en";

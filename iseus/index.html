@@ -6,15 +6,33 @@
 </head>
 <body>
 	<header >
-        <select name="language" class="language">
-            <option value="volvo">English</option>
-            <option value="saab">persian</option>
-          </select>
-        <form class="example" action="action_page.php">
-            <input type="text" placeholder="Search.." name="search" class="search">
-          </form>
-
-        <hr>
+        <div class="top">
+            <div class="div">
+              <button class="drop-down" onclick="dropdown('lang')">
+                <div>
+                    <img src="img/en.png" alt="flag" id="flag">
+                    <span id="selected" style="position: relative;top: -5px;">en</span>
+                    <img src="img/icons8-sort-down-24 (2).png" alt="arrow" class="arrow"> 
+                </div> 
+              </button>
+            
+            <div class="list div" id="lang">
+              <ul>
+                  <li><button class="option" onclick="select('option1','lang')">
+                    <img src="img/en.png" alt="en" style="width: 20px;height: 20px;border-radius: 10px; margin-right: 12px;">
+                    <span id="option1" style="position: relative;top: -5px;">english</span>
+                  </button></li>
+                  <li><button class="option" onclick="select('option2','lang')">
+                    <img src="img/ge.png" alt="ge" style="width: 20px;height: 20px;border-radius: 10px; margin-right: 4px;">
+                    <span id="option2" style="position: relative;top: -5px;">germany</span>
+                  </button></li>
+              </ul>
+            </div>
+          </div>
+              <form class="example" >
+                  <input type="text" placeholder="Search..." name="search" class="search">
+              </form>
+            </div>
         <nav class="left">
             <ul class="logo">
                 <li class="imgLogo"><a href="#">logo</a></li>
@@ -23,10 +41,10 @@
         <nav class="right">
 			<ul class="menu">
 				<li><a href="#">Home</a></li>
-				<li><a href="#">Products/Services</a></li>
+				<li><a href="products.html">Products/Services</a></li>
                 <li><a href="#">careers</a></li>
                 <li><a href="#">About us</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
 			</ul>
         </nav>
         <h1>BALANCE ENERGY AND <br> ENVIRONMENT</h1>
@@ -196,27 +214,95 @@
           </div>
           <button class="news-btn">more...</button>
     </section>
-	<footer>
+    <footer>
         <nav class="left">
             <ul class="logo">
-                <li class="imgLogo"><a href="#">logo</a></li>
+                <li class="imgLogo"><span href="#">logo</span></li>
             </ul>
         </nav>
-        <nav class="right">
+      <nav class="right">
 			<ul class="menu">
-				<li><a href="#">Home</a></li>
+				<li><a href="index.html">Home</a></li>
 				<li><a href="#">Products/Services</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Contact</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="contact.html">Contact</a></li>
 			</ul>
         </nav>
-        <select name="language" class="language" id="footer-l">
-            <option value="volvo">English</option>
-            <option value="saab">persian</option>
-        </select>
+        
+        <div class="div-foo">
+        <button class="drop-down" onclick="dropdown('lang-footer')">
+          <div>
+              <img src="img/en.png" alt="flag" id="flag2">
+              <span id="selected2" style="position: relative;top: -5px;">en</span>
+              <img src="img/icons8-sort-down-24 (2).png" alt="arrow" class="arrow"> 
+          </div> 
+        </button>
+       
+        <div class="list div-foo" id="lang-footer">
+          <ul>
+              <li><button class="option"onclick="select('option1-foo','lang-footer')">
+                <img src="img/en.png" alt="en" style="width: 20px;height: 20px;border-radius: 10px; margin-right: 12px;">
+                <span id="option1-foo" style="position: relative;top: -5px;">english</span>
+              </button></li>
+              <li><button class="option"  onclick="select('option2-foo','lang-footer')">
+                <img src="img/ge.png" alt="ge" style="width: 20px;height: 20px;border-radius: 10px; margin-right: 4px;">
+                <span id="option2-foo" style="position: relative;top: -5px;">germany</span>
+              </button></li>
+          </ul>
+        </div>
+      </div>
+        <nav class="right">
+          <ul class="menu">
+                    <li class="logo-nav" id="twiter"><a href="#"></a></li>
+                    <li class="logo-nav" id="youtube"><a href="#"></a></li>
+          </ul>
+        </nav>
+      
         <div class="Copyright">Copyright © 2020 iSEUS. All rights reserved.</div>
-
+      
     </footer>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          var y = document.getElementById("topnav");
+          if (x.style.display === "block") {
+            y.style.background = "none";
+            x.style.display = "none";
+          } else {
+            y.style.background = "white";
+            x.style.display = "block";
+          }
+        }
+        function dropdown(id) {
+          var x = document.getElementById(id);
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        function select(sel_id , list_id){
+            var x = document.getElementById(list_id);
+            var y = document.getElementById("selected");
+            var y2 = document.getElementById("selected2");
+            var sel = document.getElementById(sel_id);
+            var flag = document.getElementById("flag");
+            var flag2 = document.getElementById("flag2");
+            console.log(x,y)
+            if(sel.innerText==="english") {
+                flag.src = 'img/en.png';
+                flag2.src = 'img/en.png';
+                y.innerText="en";
+                y2.innerText="en";
+            }else if(sel.innerText==="germany"){
+                flag.src  = 'img/ge.png';
+                flag2.src  = 'img/ge.png';
+                y.innerText="gr";
+                y2.innerText="gr";
+            }
+            x.style.display = "none";
+        }
+      </script>
 </body>
 </html>
