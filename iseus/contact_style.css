@@ -5,20 +5,36 @@ header{
     border-bottom-left-radius: 45% 5%;
     border-bottom-right-radius: 45% 5%;
 }
-header .lang{
+.lang{
     float: right;
-    margin-right: 120px;
+    border-radius: 30px !important;
+    margin-right: 105px;
     margin-top: 15px;
     margin-left: 30px;
 
 }
-header .lang .dropdown-toggle{
+.dropdown.lang .dropdown-toggle{
     background:none;
-    border-radius: 20px;
+    border-radius: 30px;
     width: 130px;
+    height: 37px;
     color: white;
     border: 1px solid white;
+   
 }
+.dropdown.lang .dropdown-toggle img{
+    height: 22px;
+    width: 22px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+.dropdown.lang .dropdown-menu a img{
+    height: 22px;
+    width: 22px;
+    border-radius: 10px;
+}
+
 header .head-line{
     height: 70px;
     border-bottom: 1px solid white;
@@ -53,7 +69,7 @@ form.example input[type=text] {
 header .menu{
     background: none;
     border: none;
-    margin-right: 50px;
+    margin-right: 55px;
 }
 header .menu .nav-item .nav-link{
     color: white;
@@ -72,10 +88,10 @@ header .menu .navbar-brand{
     position: relative;
     top: 15px;
     text-indent: -9999999px; 
-    margin-left: 80px;
+    margin-left: 85px;
 }
 header .h1{
-    margin-top: -12px;
+    margin-top: -20px;
     text-transform: uppercase;
     float: left;
     margin-left: 7%;
@@ -95,21 +111,42 @@ header .dropdown .dropdown-toggle{
     background:none;
     border-radius: 5px;
     color: white;
+    
     border: 1px solid white;
 }
-.container .col-sm label{
+header .dropdown .dropdown-toggle span{
+    color: white;
+    opacity: 0.6;
+}
+.container-fluid .col-md-4 label{
     margin-top: 20px;
     color: white;
 }
-.container .col-sm input{
+.container-fluid .col-md-4 input{
     background: none;
     border: 1px solid white;
+    color: white !important;
+}
+.container-fluid .col-md-4 textarea{
+    background: none;
+    border: 1px solid white;
+    color: white !important;
+}
+.container-fluid .col-md-4 input::placeholder{
     color: white;
-    width: 75%;
+    opacity: 0.6;
+    position: relative;
+    top: -40px;
+}
+.container-fluid .col-md-4 textarea::placeholder{
+    color: white;
+    opacity: 0.6;
+    position: relative;
+    top: -40px;
 }
 #msg{
-    width: 36.5%;
     height: 150px;
+    padding-top: 0px;
 }
 #file{
     background: none;
@@ -123,24 +160,23 @@ header .dropdown .dropdown-toggle{
     overflow: hidden;
     clip: rect(0,0,0,0);
 }
-.container .col-sm .upload-box{
-    width: 75%;
+.container-fluid .col-md-4 .upload-box{
     border-radius: 5px;
     background: none;
     border: 1px dashed white;
     color: white;
-    padding-left: 5%;
+    padding-left: 8%;
     padding-top: 5px;
     padding-bottom: 2%;
 }
-.container .col-sm .upload-box span button{
+.container-fluid .col-md-4 .upload-box span button{
     background: none;
     border: none;
     border-bottom: 1px solid white;
     color: white;
 }
 header .send{
-    margin-left: 13%;
+    margin-left: 7%;
     margin-top: 20px;
     width: 144px;
     height: 40px;
@@ -148,7 +184,136 @@ header .send{
     background-color: #ffffff;
     border: none;
 }
-
+.contact{
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-bottom: 50px;
+}
+.contact .d-flex .p-2{
+    text-transform: uppercase;
+    font-size: 38px;
+    font-weight: 600;
+    margin-left: 7%;
+}
+.contact .d-flex .p-2.flex-grow-1{
+    border-bottom: 3px solid black; 
+    height:40px;
+    margin-right: 7%;
+}
+.contact .contact-info{
+    margin-top: 50px;
+}
+.contact .contact-info .row .col-sm .info{
+    margin-top: 20px;
+    border-radius: 15px;
+    text-align: center;
+    min-height: 25px;
+    background-color: lightgray;
+    min-width: 110px;
+}
+.contact .contact-info .row .col-sm div .icon{
+    float: left;
+    margin-left: 15px;
+    padding-right: 10px;
+    margin-top: 2px;
+    border-right: 1px solid black;
+}
+#social-media a{
+    margin-right: 6px;
+    color: transparent;
+    margin-top: 6px;
+    background-repeat: no-repeat;
+}
+#twitter{
+    background-image: url("img/Group 127.png");
+}
+#fb{
+    background-image: url("img/Group 123.png");
+}
+#insta{
+    background-image: url("img/Group 118.png");
+}
+#linkdin{
+    margin-left: 4px;
+    background-image: url("img/Group 146.png");
+}
+footer .menu{
+    list-style-type: none;
+    text-align: center;
+     margin-top: 30px;
+ }
+ footer .menu li{
+     display: inline-block;
+     margin-left: 17px;
+ }
+ footer .menu.s-media li{
+         margin-left: 3px;
+     }
+ footer .menu.s-media li a{
+     color: transparent;
+     background-repeat: no-repeat;
+     background-position: right;
+ }
+ footer .menu li.home{
+     margin-left: 0px;
+ }
+ footer .menu li a{
+     color: white;
+ }
+ footer .menu li a:hover{
+     text-decoration: none;
+     border-bottom: 1px solid white;
+ }
+ footer .menu.s-media li a:hover{
+    text-decoration: none;
+    border-bottom: 0px ;
+}
+ footer .Copyright{
+     background: #232323;
+     color: white;
+     padding-top: 15px;
+     padding-bottom: 15px;
+     padding-left: 7%;
+ }
+ @media (min-width: 576px) { 
+     footer .menu li{
+         margin-left: 30px;
+     }
+     footer .menu.s-media li{
+         margin-left: 15px;
+     }
+  }
+ 
+ @media (min-width: 768px) { 
+     footer .menu li{
+         margin-left: 20px;
+     }
+     footer .menu{
+         text-align: right;
+     }
+     footer .menu.s-media li{
+         margin-left: 15px;
+     }
+  }
+ 
+ @media (min-width: 992px) { 
+     footer .menu li{
+         margin-left: 40px;
+     }
+     footer .menu.s-media li{
+         margin-left: 15px;
+     }
+  }
+ 
+ @media (min-width: 1200px) { 
+     footer .menu li{
+         margin-left: 50px;
+     }
+     footer .menu.s-media li{
+         margin-left: 15px;
+     }
+  }
+ 
 
 
 
