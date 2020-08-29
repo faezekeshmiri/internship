@@ -7,7 +7,6 @@ header{
     background-image: url("img/pinwheel-2222471_1920.png");
     background-size: 100%;
     background-repeat: no-repeat;
-    
     text-align: center;
     height: 850px;
     margin: 0px;
@@ -16,16 +15,25 @@ header{
 header hr{
     margin-top: 10px;
 }
+.search{
+    background-color: #ffffff;
+    opacity: 0.3;
+    border: none;
+    background-image: url("img/Path 217.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position: 95%;
+    height: 17px;
+}
 form.example input[type=text] {
     padding: 10px;
     font-size: 12px;
-    border: 1px solid grey;
     float: right;
-    width: 20%;
-    background-color:lightgray;
-    border-radius: 20px;
+    width: 23%;
     margin-top: 10px;
-    margin-right: 30px;
+    right: 250px;
+    border-radius: 24px;
+    position: absolute;
 }
 
   /* Clear floats */
@@ -34,17 +42,69 @@ form.example input[type=text] {
     clear: both;
     display: table;
   }
-.language{
-    padding: 10px;
-    font-size: 12px;
-    border: 1px solid grey;
+  .div{
     float: right;
-    width: 7%;
+    margin-left: 5px;
+    margin-right: 20px;
+}
+.top{
+    height: 70px;
+    border-bottom: 1px solid black;
+    margin-bottom: 26px;
+}
+.drop-down{
+    font-size: 12px;
+    border: 0.25px solid #d1d1d1;
+    float: right;
+    width: 111px;
     background: none;
+    text-transform: uppercase;
+    font-weight: bolder;
     color: white;
     border-radius: 20px;
     margin-top: 10px;
     margin-right: 90px;
+    height: 35px;
+}
+#flag{
+    width: 27px;
+    height: 25px;
+    border-radius: 28px;
+    float: left;
+}
+.arrow {
+    margin-right: -15px;
+    margin-left: 5px;
+    margin-top: 0px;
+  }
+.list ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+.option{
+    background: none;
+    height: max-content;
+    border: none;
+    width: 88px;
+    background-size: 26px;
+    background-repeat: no-repeat;
+    background-position: 5% 4%;
+    font-size: 12px;
+    text-align: right;
+}
+
+.list{
+    background-color: #f1f1f1;
+    box-shadow: lightgray 0px 0px 8px;
+    border-radius: 5px;
+    width: 88px;
+    height: max-content;
+    float: right;
+    margin-right: 100px;
+    margin-left: 110px;
+    display: none;
+    clear: both;
 }
 nav li{
     display: inline-block;
@@ -122,21 +182,18 @@ header h1{
 }
 
 section .h1{
-    margin-left: 80px;
+    margin-right: 2%;
     margin-top: -12px;
     text-transform: uppercase;
-    font-size: 30px;
-    width: 15%;
     float: left;
-   
+    margin-left: 110px;
 }
 section .hr{
     margin-top: 0px;
-    margin-right: 80px;
-    width: 72%;
     height: 3px;
     background: black;
     color: black;
+    margin-right: 110px;
 }
 section h2{
     text-transform: uppercase;
@@ -155,7 +212,7 @@ section h2{
     float: left;
     height: 300px;
     margin-top: 80px;
-    margin-left: -225px;
+    margin-left: -198px;
 }
 .paragraph h1{
     text-transform: uppercase;
@@ -169,7 +226,7 @@ section h2{
 .img{
     width: 40%;
     height: 150px;
-    margin-left: 300px;
+    margin-left: 250px;
     margin-top: 200px;
     padding-top: 100px;
 }
@@ -184,15 +241,13 @@ section h2{
     padding-top: 80px;
     padding-bottom: 80px;
 }
-.sec2 .hr{
-    width: 74%;
-}
+
 .paragraph2{
-    width: 89%;
+    width: 85%;
     float: left;
     height: 300px;
     margin-top: 80px;
-    margin-left: -225px;
+    margin-left: -170px;
 }
 .paragraph2 h1{
     text-transform: uppercase;
@@ -209,8 +264,8 @@ section h2{
 section .square-left{
     border:1px solid #c2c2c2;
     height: 380px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 110px;
+    margin-right: 110px;
     margin-top: 30px;
     border-radius: 35px;
     background-image: url("img/Mask Group 15.png");
@@ -250,8 +305,8 @@ section .square-left{
 section .square-right{
     border:1px solid #c2c2c2;
     height: 380px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 110px;
+    margin-right: 110px;
     margin-top: 30px;
     border-radius: 35px;
     background-image: url("img/img.jpg");
@@ -286,12 +341,7 @@ section .square-right{
     padding-top: 80px;
     padding-bottom: 80px;
 }
-.sec3 .hr{
-    width: 81%;
-}
-.sec3 .h1{
-    width: 8%;
-}
+
 
 .grid-container {
     display: grid;
@@ -364,7 +414,7 @@ footer{
     color: white;
     padding-top: 30px;
     padding-bottom: 30px;
-    height: 180px;
+    height: 220px;
 
 }
 footer nav{
@@ -383,20 +433,18 @@ footer a{
 }
 footer .logo{
     text-align: left;
-    margin-left: 80px;
+    margin-left: 90px;
     
 }
 
-footer .imgLogo a{
-    background-color: none;
+footer .imgLogo span{
+      background-color: none;
       background-image: url("img/logo.png");
       background-repeat: no-repeat;
       background-size: 50px;
       display: inline-block;
       height: 140px;
       width: 300px;
-      position: relative;
-      top: -50px;
       text-indent: -9999999px;  
       
     
@@ -414,14 +462,62 @@ footer h1{
     font-size: 50px;
     
 }
-#footer-l{
+footer .arrow{
+    margin-right: -15px;
+    margin-left: 5px;
+    margin-top: 0px;
+}
+footer .drop-down{
     float: left;
-    margin-left: 90px;
+    margin-left: 100px;
+    font-size: 12px;
+    border: 0.25px solid #d1d1d1;
+    width: 111px;
+    background: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+    border-radius: 20px;
+    margin-top: 10px;
+    height: 35px;
+    background-color: black;
+}
+footer .list{
+    float: left;
+}
+.div-foo{
+    float: left;
+    margin-right: 5px;
+}
+#flag2{
+    width: 27px;
+    height: 25px;
+    border-radius: 28px;
+    float: left;
+}
+.logo-nav{
+    background-color: none;
+    
+    background-repeat: no-repeat;
+    background-size: 30px;
+    display: inline-block;
+    height: 28px;
+    width: 40px;
+    position: relative;
+    top: 8px;
+    text-indent: -9999999px;
+    margin-right: 20px; 
+}
+#twiter{
+    background-image: url("img/twitter.png");
+}
+#youtube{
+    background-image: url("img/youtube-white.png");
 }
 .Copyright{
     height: 40px;
     background: #232323;
-    margin-top:180px;
-    padding-top: 15px;
+    margin-top:200px;
+    padding-top: 20px;
     padding-left: 90px;
+    margin-bottom: 0px;
 }
